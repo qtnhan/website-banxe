@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="sanpham">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Sản Phẩm</p>
+            </div>
+            <div class="col-md-8">
+                <div>
+                    <ul>
+                        <a href="" [routerLink] ="['/xemay']"><li>XE SỐ</li></a> 
+                        <a href=""[routerLink] ="['/xetayga']"><li>XE TAY GA</li></a> 
+                        <a href=""[routerLink] ="['/xetaycon']"><li>XE CÔN TAY</li></a> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+<div class="wrapper">
+    <div class="item" *ngFor='let item of datas'>
+        <div class="div">
+            <div class="img">
+                <a href="" [routerLink] = "['/chitiet', item.maMH]" ><img src="{{item.hinhAnh}}" width="250px" height="200px" alt=""></a>
+                <p style="color: red; font-size: 22px; font-weight: bold;">{{item.tenMH}}</p>
+                <p style="font-size: 16px;">{{item.donGia}}</p>
+            </div>
+        </div>
+    </div>
+</div>

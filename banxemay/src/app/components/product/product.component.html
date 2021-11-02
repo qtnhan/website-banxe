@@ -1,0 +1,12 @@
+<!------------------------- sản phẩm ---------------------->
+<div class="wrapper">
+    <div class="item" *ngFor='let item of datas'>
+        <div class="div">
+            <div class="img">
+                <a href="" [routerLink] = "['/chitiet', item.maMH]" ><img src="{{item.hinhAnh}}" width="250px" height="200px" alt=""></a>
+                <p style="color: red; font-size: 22px; font-weight: bold;">{{item.tenMH}}</p>
+                <p style="font-size: 16px;">{{item.donGia}}</p>
+            </div>
+        </div>
+    </div>
+</div>

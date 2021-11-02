@@ -1,0 +1,30 @@
+
+.sanpham {
+    padding-top: 22rem;
+  }
+  p {
+      color: #212121;
+      font: 32px Helvetica, sans-serif;
+      margin: 0px 0px 0px 5px;
+      padding-left: 10rem;
+  }
+  ul {
+      display: flex;
+  }
+  li {
+      text-decoration: none;
+      list-style-type: none;
+      font: 16px Helvetica, sans-serif;
+      border: 1px solid #707070;
+      border-radius: 15px ;
+      padding: 10px;
+      margin-left: 15px;
+      color: #707070;
+  }
+  a {
+      text-decoration: none;
+  }
+  a li:hover {
+      color: red;
+  }
+  
